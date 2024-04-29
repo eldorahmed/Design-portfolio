@@ -567,6 +567,21 @@ main {
   .work__list {
     gap: 1.6rem;
     margin-bottom: 32px;
+    animation: slides 20s infinite;
+  }
+  @keyframes slides {
+    0% {
+      transform: translateX(-10px);
+    }
+    20% {
+      transform: translateX(-500px);
+    }
+    40% {
+      transform: translateX(-1000px);
+    }
+    100% {
+      transform: translateX(0);
+    }
   }
   .work__img {
     width: 270px;
